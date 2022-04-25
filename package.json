@@ -1,8 +1,8 @@
 {
   "name": "flappy-bird",
   "version": "0.0.0",
-  "description": "A side-scroller where the player controls a bird, attempting to fly between columns of green pipes without hitting them.",
-  "author": "Evan Bacon",
+  "description": "A game reminiscent to the game that took us by storm, flappy bird. A simple side scrolling game where your only task is to jump in between the pipes coming from above and below you.",
+  "author": "Chase Holt",
   "private": true,
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {

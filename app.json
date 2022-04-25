@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Flappy Bird",
-    "description": "A side-scroller where the player controls a bird, attempting to fly between columns of green pipes without hitting them.",
+    "description": "A game reminiscent to the game that took us by storm, flappy bird. A simple side scrolling game where your only task is to jump in between the pipes coming from above and below you.",
     "slug": "flappy-bird",
     "privacy": "unlisted",
     "sdkVersion": "32.0.0",
