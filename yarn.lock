@@ -5150,9 +5150,9 @@ react-native-gesture-handler@^1.1.0:
     invariant "^2.2.2"
     prop-types "^15.5.10"
 
-"react-native-maps@github:expo/react-native-maps#v0.23.0-exp.0":
+react-native-maps@expo/react-native-maps#v0.23.0-exp.0:
   version "0.23.0"
-  resolved "git+ssh://git@github.com/expo/react-native-maps.git#b1bc796f9b8590e98ead2261f69c43068ea535d7"
+  resolved "https://codeload.github.com/expo/react-native-maps/tar.gz/b1bc796f9b8590e98ead2261f69c43068ea535d7"
 
 react-native-reanimated@1.0.0-alpha.11:
   version "1.0.0-alpha.11"

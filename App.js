@@ -1,15 +1,15 @@
-import { GLView } from 'expo';
-import * as React from 'react';
-import { Text, TouchableWithoutFeedback, View } from 'react-native';
+import { GLView } from "expo";
+import * as React from "react";
+import { Text, TouchableWithoutFeedback, View } from "react-native";
 
-import DisableBodyScrollingView from './components/DisableBodyScrollingView';
-import ExpoButton from './components/ExpoButton';
-import GithubButton from './components/GithubButton';
-import KeyboardControlsView from './components/KeyboardControlsView';
-import logyo from './components/logyo';
-import Game from './src/game';
+import DisableBodyScrollingView from "./components/DisableBodyScrollingView";
+import ExpoButton from "./components/ExpoButton";
+import GithubButton from "./components/GithubButton";
+import KeyboardControlsView from "./components/KeyboardControlsView";
+import logyo from "./components/logyo";
+import Game from "./src/game";
 
-logyo('https://twitter.com/baconbrix');
+logyo("https://twitter.com/chaseholt13");
 export default class App extends React.Component {
   state = {
     score: 0,
@@ -18,13 +18,13 @@ export default class App extends React.Component {
     const { style, ...props } = this.props;
     return (
       <View
-        style={[{ width: '100vw', height: '100vh', overflow: 'hidden' }, style]}
+        style={[{ width: "100vw", height: "100vh", overflow: "hidden" }, style]}
       >
         <DisableBodyScrollingView>
           <KeyboardControlsView
             onKeyDown={({ code }) => {
               if (this.game) {
-                if (code === 'Space') {
+                if (code === "Space") {
                   this.game.onPress();
                 }
               }
@@ -36,10 +36,10 @@ export default class App extends React.Component {
               }}
             >
               <GLView
-                style={{ flex: 1, backgroundColor: 'black' }}
-                onContextCreate={context => {
+                style={{ flex: 1, backgroundColor: "black" }}
+                onContextCreate={(context) => {
                   this.game = new Game(context);
-                  this.game.onScore = score => this.setState({ score });
+                  this.game.onScore = (score) => this.setState({ score });
                 }}
               />
             </TouchableWithoutFeedback>
@@ -57,14 +57,14 @@ export default class App extends React.Component {
 const Score = ({ children }) => (
   <Text
     style={{
-      position: 'absolute',
+      position: "absolute",
       left: 0,
-      top: '10%',
+      top: "10%",
       right: 0,
-      textAlign: 'center',
-      color: 'white',
+      textAlign: "center",
+      color: "white",
       fontSize: 48,
-      userSelect: 'none',
+      userSelect: "none",
     }}
   >
     {children}
